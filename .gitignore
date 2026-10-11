@@ -7,6 +7,9 @@ data/
 # Secrets
 .env
 
+# Private notes for Claude Code (personal profile)
+CLAUDE.local.md
+
 # Databases
 *.db
 
