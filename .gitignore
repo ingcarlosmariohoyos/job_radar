@@ -1,0 +1,18 @@
+# Virtual environment
+.venv/
+
+# Local data (scraped results, exports, CV, etc.)
+data/
+
+# Secrets
+.env
+
+# Databases
+*.db
+
+# PDFs (CV must never be committed)
+*.pdf
+
+# Python cache
+__pycache__/
+*.pyc
