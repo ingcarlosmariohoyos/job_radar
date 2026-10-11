@@ -1,0 +1,20 @@
+skill,aliases,category,level,evidence
+power_bi,power bi;powerbi;pbi;dax,bi,3,work
+sql,sql;t-sql;tsql;pl/sql;plsql,database,2,work
+python,python,language,2,work
+pandas,pandas,processing,2,work
+polars,polars,processing,2,work
+spark,spark;pyspark;spark sql;apache spark,processing,1,course
+aws_s3,s3;aws s3;amazon s3,cloud,2,work
+aws_athena,athena;aws athena;amazon athena,cloud,2,work
+microsoft_fabric,fabric;microsoft fabric;onelake;eventhouse;kql;real-time intelligence,cloud,1,course
+oracle,oracle;oracle database;sql developer,database,2,work
+sql_server,sql server;mssql;microsoft sql server,database,1,course
+postgresql,postgresql;postgres;supabase,database,2,project
+etl,etl;elt;data pipelines;pipelines de datos,etl,2,work
+pentaho,pentaho;pentaho data integration;pdi;kettle,etl,2,work
+dbt,dbt;data build tool,transformation,2,project
+dagster,dagster,orchestration,2,project
+prefect,prefect,orchestration,1,project
+docker,docker,devops,1,project
+git,git;github;gitlab,devops,2,work
