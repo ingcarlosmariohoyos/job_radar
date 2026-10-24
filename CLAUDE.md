@@ -75,7 +75,8 @@ Decisiones tomadas:
   - Repo en GitHub.
   - `config/skills.csv` con 19 skills.
   - Instrucciones para Claude Code: `CLAUDE.md` (público) y `CLAUDE.local.md` (privado, ignorado por git).
-- **Siguiente paso:** `src/skills.py` con `load_skills(path)`, que lee el CSV y construye una estructura donde cada alias apunte a su skill (nombre, categoría, nivel, evidencia). Prueba: `skills_by_alias["pbi"]` debe devolver los datos de `power_bi`. Usar el módulo `csv` de la librería estándar.
+  - `src/skills.py` con `load_skills(path)`: lee el CSV con `csv.DictReader` y devuelve `skills_by_alias` (alias → skill, categoría, nivel como `int`, evidencia). Prueba manual OK: `pbi` → `power_bi`, `plsql` → `sql`.
+- **Siguiente paso:** mover las líneas de prueba de `src/skills.py` bajo `if __name__ == "__main__":` (para que no se ejecuten al importar). Luego, limpiar los alias al cargar (espacios y mayúsculas con `strip`/`lower`) y empezar a leer una oferta pegada a mano.
 
 ## Trampas conocidas (dar como pista, no como solución)
 - El alias `sql` aparece dentro de "postgresql", "mysql" y "nosql". Buscar con `in` da falsos positivos. La solución pasa por buscar palabras completas (módulo `re`, `\b`). Ojo con alias que tienen caracteres especiales (`pl/sql`, `t-sql`, `etl/elt`).
