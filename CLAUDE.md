@@ -74,6 +74,7 @@ Decisiones tomadas:
   - Entorno: `.venv`, estructura de carpetas, `.gitignore` verificado con `git ls-files`.
   - Repo en GitHub.
   - `config/skills.csv` con 19 skills.
+  - Instrucciones para Claude Code: `CLAUDE.md` (público) y `CLAUDE.local.md` (privado, ignorado por git).
 - **Siguiente paso:** `src/skills.py` con `load_skills(path)`, que lee el CSV y construye una estructura donde cada alias apunte a su skill (nombre, categoría, nivel, evidencia). Prueba: `skills_by_alias["pbi"]` debe devolver los datos de `power_bi`. Usar el módulo `csv` de la librería estándar.
 
 ## Trampas conocidas (dar como pista, no como solución)
